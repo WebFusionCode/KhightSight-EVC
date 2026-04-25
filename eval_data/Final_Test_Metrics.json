@@ -1,0 +1,598 @@
+{
+    "1.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "10.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "100.jpg": {
+        "extracted_plate": "PUE5INDIB",
+        "ocr_confidence": 0.3358
+    },
+    "101.jpg": {
+        "extracted_plate": "1ININL",
+        "ocr_confidence": 0.3297
+    },
+    "102.jpg": {
+        "extracted_plate": "NDTBT",
+        "ocr_confidence": 0.2244
+    },
+    "103.jpg": {
+        "extracted_plate": "INDV144",
+        "ocr_confidence": 0.3204
+    },
+    "104.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "105.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "106.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "107.jpg": {
+        "extracted_plate": "8IESRIE2P8N8CNEI",
+        "ocr_confidence": 0.2516
+    },
+    "108.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "109.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "11.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "110.jpg": {
+        "extracted_plate": "AMCRON1EUINOLT",
+        "ocr_confidence": 0.1192
+    },
+    "111.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "112.jpg": {
+        "extracted_plate": "J411311ULIEETC4",
+        "ocr_confidence": 0.2579
+    },
+    "113.jpg": {
+        "extracted_plate": "2OA06MEETP",
+        "ocr_confidence": 0.1333
+    },
+    "114.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "115.jpg": {
+        "extracted_plate": "AIND",
+        "ocr_confidence": 0.2655
+    },
+    "116.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "117.jpg": {
+        "extracted_plate": "INDCSOIEE2VTEC5EC",
+        "ocr_confidence": 0.1559
+    },
+    "118.jpg": {
+        "extracted_plate": "511INDYIM1",
+        "ocr_confidence": 0.3144
+    },
+    "119.jpg": {
+        "extracted_plate": "70E2I3",
+        "ocr_confidence": 0.1492
+    },
+    "12.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "120.jpg": {
+        "extracted_plate": "IND",
+        "ocr_confidence": 0.6277
+    },
+    "121.jpg": {
+        "extracted_plate": "INDU71FTTOW",
+        "ocr_confidence": 0.3021
+    },
+    "122.jpg": {
+        "extracted_plate": "OOUTNB1UINSREE111D",
+        "ocr_confidence": 0.2358
+    },
+    "123.jpg": {
+        "extracted_plate": "6ONN4IND42U12300",
+        "ocr_confidence": 0.2823
+    },
+    "124.jpg": {
+        "extracted_plate": "OWTIND",
+        "ocr_confidence": 0.1657
+    },
+    "125.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "126.jpg": {
+        "extracted_plate": "8INL26",
+        "ocr_confidence": 0.2109
+    },
+    "127.jpg": {
+        "extracted_plate": "MENS4IS1ARMSSTA",
+        "ocr_confidence": 0.201
+    },
+    "128.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "129.jpg": {
+        "extracted_plate": "TIND1A8571",
+        "ocr_confidence": 0.2244
+    },
+    "13.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "130.jpg": {
+        "extracted_plate": "OM01VINDBBT",
+        "ocr_confidence": 0.2138
+    },
+    "131.jpg": {
+        "extracted_plate": "FIND34",
+        "ocr_confidence": 0.1098
+    },
+    "132.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "133.jpg": {
+        "extracted_plate": "INDNAL",
+        "ocr_confidence": 0.334
+    },
+    "134.jpg": {
+        "extracted_plate": "P",
+        "ocr_confidence": 0.0929
+    },
+    "135.jpg": {
+        "extracted_plate": "CATIND50A",
+        "ocr_confidence": 0.2657
+    },
+    "136.jpg": {
+        "extracted_plate": "TEISOE2BFEIA2",
+        "ocr_confidence": 0.2112
+    },
+    "137.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "138.jpg": {
+        "extracted_plate": "INDOT1R",
+        "ocr_confidence": 0.1627
+    },
+    "139.jpg": {
+        "extracted_plate": "A1CLOUSINDWEELWANE0221",
+        "ocr_confidence": 0.3292
+    },
+    "14.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "140.jpg": {
+        "extracted_plate": "O1248IND22",
+        "ocr_confidence": 0.2971
+    },
+    "141.jpg": {
+        "extracted_plate": "4EICN1OTI1A31IT",
+        "ocr_confidence": 0.2066
+    },
+    "142.jpg": {
+        "extracted_plate": "3",
+        "ocr_confidence": 0.1055
+    },
+    "143.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "144.jpg": {
+        "extracted_plate": "WD2NINDU59ASHIVIOROKHR",
+        "ocr_confidence": 0.1823
+    },
+    "145.jpg": {
+        "extracted_plate": "SMEIEEHEU",
+        "ocr_confidence": 0.1888
+    },
+    "146.jpg": {
+        "extracted_plate": "NII1INDU4I4",
+        "ocr_confidence": 0.2083
+    },
+    "147.jpg": {
+        "extracted_plate": "IND181",
+        "ocr_confidence": 0.1422
+    },
+    "148.jpg": {
+        "extracted_plate": "1NO",
+        "ocr_confidence": 0.2436
+    },
+    "149.jpg": {
+        "extracted_plate": "TFTAACTA",
+        "ocr_confidence": 0.127
+    },
+    "15.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "16.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "17.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "18.jpg": {
+        "extracted_plate": "ETINBT1C",
+        "ocr_confidence": 0.1497
+    },
+    "19.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "2.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "20.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "21.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "22.jpg": {
+        "extracted_plate": "TTNL2B7C231E",
+        "ocr_confidence": 0.081
+    },
+    "23.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "24.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "25.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "26.jpg": {
+        "extracted_plate": "I",
+        "ocr_confidence": 0.137
+    },
+    "27.jpg": {
+        "extracted_plate": "ESTTINDSNTSCTECFI",
+        "ocr_confidence": 0.2937
+    },
+    "28.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "29.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "3.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "30.jpg": {
+        "extracted_plate": "0EE",
+        "ocr_confidence": 0.0791
+    },
+    "31.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "32.jpg": {
+        "extracted_plate": "2IR",
+        "ocr_confidence": 0.0929
+    },
+    "33.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "34.jpg": {
+        "extracted_plate": "A0120",
+        "ocr_confidence": 0.2356
+    },
+    "35.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "36.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "37.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "38.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "39.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "4.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "40.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "41.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "42.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "43.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "44.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "45.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "46.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "47.jpg": {
+        "extracted_plate": "65I942TH",
+        "ocr_confidence": 0.2369
+    },
+    "48.jpg": {
+        "extracted_plate": "IND",
+        "ocr_confidence": 0.1765
+    },
+    "49.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "5.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "50.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "51.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "52.jpg": {
+        "extracted_plate": "S",
+        "ocr_confidence": 0.0913
+    },
+    "53.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "54.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "55.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "56.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "57.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "58.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "59.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "6.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "60.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "61.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "62.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "63.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "64.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "65.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "66.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "67.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "68.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "69.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "7.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "70.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "71.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "72.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "73.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "74.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "75.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "76.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "77.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "78.jpg": {
+        "extracted_plate": "EL",
+        "ocr_confidence": 0.2512
+    },
+    "79.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "8.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "80.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "81.jpg": {
+        "extracted_plate": "ALOAUTOPL",
+        "ocr_confidence": 0.4757
+    },
+    "82.jpg": {
+        "extracted_plate": "12TOLI",
+        "ocr_confidence": 0.2725
+    },
+    "83.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "84.jpg": {
+        "extracted_plate": "VVIV2",
+        "ocr_confidence": 0.1991
+    },
+    "85.jpg": {
+        "extracted_plate": "HEE",
+        "ocr_confidence": 0.143
+    },
+    "86.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "87.jpg": {
+        "extracted_plate": "C4KTUO",
+        "ocr_confidence": 0.1276
+    },
+    "88.jpg": {
+        "extracted_plate": "03MU6952KAO2C3ON111BOT3E0SUTSE290",
+        "ocr_confidence": 0.2081
+    },
+    "89.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "9.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    },
+    "90.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "91.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "92.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "93.jpg": {
+        "extracted_plate": "21IW",
+        "ocr_confidence": 0.1498
+    },
+    "94.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "95.jpg": {
+        "extracted_plate": "I",
+        "ocr_confidence": 0.4036
+    },
+    "96.jpg": {
+        "extracted_plate": "",
+        "ocr_confidence": 0.0
+    },
+    "97.jpg": {
+        "extracted_plate": "DE3",
+        "ocr_confidence": 0.2601
+    },
+    "98.jpg": {
+        "extracted_plate": "0120EC",
+        "ocr_confidence": 0.3038
+    },
+    "99.jpg": {
+        "extracted_plate": "UNKNOWN",
+        "ocr_confidence": 0
+    }
+}
