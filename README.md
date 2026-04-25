@@ -2,24 +2,25 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1024px-GitHub_Invertocat_Logo.svg.png" width="100" />
   <h1>KnightSight V2 - Advanced ANPR Pipeline</h1>
   <p>State-of-the-Art Automatic Number Plate Recognition (ANPR) System heavily optimized for Edge Deployments.</p>
+  <h3><a href="https://khightsight-evc-jdsrn4gpgaayffiovcgjef.streamlit.app/">🔴 Live Command Center Demonstration</a></h3>
 </div>
 
 ---
 
 ## 🎯 System Overview & Metrics
-KnightSight V2 is a fully autonomous pipeline spanning from raw image acquisition to final regex-validated data structuring. By ditching heavy commercial OCR engines and relying on highly-trained edge algorithms, it reads license plates in roughly ~65 milliseconds on standard CPUs.
+KnightSight V2 is a fully autonomous pipeline spanning from raw image acquisition to final regex-validated data structuring. By ditching heavy commercial OCR engines and relying on highly-trained edge algorithms, it reads 4K license plates in roughly ~65 milliseconds on standard cloud architectures.
 
-* **Inference Speed**: ~15–20 FPS (CPU-Only)
-* **Model Footprint**: < 19.0 MB total sizes.
-* **YOLOv8 Detection (Precision)**: 97.2%
-* **YOLOv8 Detection (mAP50)**: 97.5%
-* **OCR Character Error Rate**: < 1.5%
+* **Inference Speed**: ~65ms per inference (CPU-Only)
+* **Model Footprint**: < 18.5 MB total spatial size!
+* **YOLOv8 Detection (mAP@0.5)**: 99.5%
+* **Precision-Recall Parity**: 0.99 
+* **Optical Scale Invariance**: Built to natively mathematically scale 4K Test Data down to 64-pixel strings for crash-proof OCR reading.
 
 ### 🔧 Architecture
-1. **Target Detection**: Fine-Tuned YOLOv8 Nano (`yolov8n`).
-2. **Adaptive Target Illumination**: Mathematical unsharp masking and Contrast Limited Adaptive Histogram Equalization (CLAHE) for dim-light conditions.
-3. **Character Extraction**: Mobile-optimized PaddleOCR (`en_PP-OCRv5_mobile`).
-4. **Data Validation**: Strict Python Regex matching ensuring structural integrity (`^[A-Z]{2}[0-9]{2}[A-Z]{1,2}[0-9]{4}$`).
+1. **Target Detection**: Fine-Tuned YOLOv8 Nano (`knightsight.pt`).
+2. **Geometric Optical Slicing**: Dynamic Dual-Chamber plate slicing for Indian Bike Plates, equipped with bounding box erosion to drop dealer branding.
+3. **Character Extraction**: Mobile-optimized PaddleOCR passing pure unadulterated RGB pixels into the convolutional pipeline.
+4. **Data Validation**: Strict Python Regex matching ensuring structural integrity (`^[A-Z]{2}[0-9]{2}[A-Z]{1,2}[0-9]{4}$`), upgraded to automatically repair syntax on shorter vintage plates!
 
 ---
 
