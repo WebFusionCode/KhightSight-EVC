@@ -3,9 +3,11 @@ from __future__ import annotations
 import re
 
 def clean_plate_text(text: str) -> str:
-    """Uppercase and keep only alphanumerics."""
-    cleaned = re.sub(r"[^A-Za-z0-9]", "", text or "")
-    return cleaned.upper()
+    """Uppercase and keep only alphanumerics. Strip IND."""
+    cleaned = re.sub(r"[^A-Za-z0-9]", "", text or "").upper()
+    # Remove the standard Indian plate hologram text which confuses OCR
+    cleaned = cleaned.replace("IND", "")
+    return cleaned
 
 def correct_common_mistakes(text: str) -> str:
     """Map common OCR typos to their correct representations based on character position."""
@@ -40,10 +42,10 @@ def validate_and_format_indian_plate(text: str) -> tuple[str, bool]:
             + number_digits.translate(digit_for_char)
         )
 
-    # Attempt to fit AA00AA0000, AA00A0000 etc. format.
-    # District codes are typically 2 digits but maybe 1. Series is 1 to 3 letters.
+    # Attempt to fit AA00AA0000, AA00A0000, AA000000 etc. format.
+    # District codes are typically 2 digits but maybe 1. Series is 0 to 3 letters.
     for district_len in (2, 1):
-        for series_len in (2, 1, 3):
+        for series_len in (0, 1, 2, 3):
             if 2 + district_len + series_len + 4 != len(cleaned):
                 continue
             
@@ -57,6 +59,7 @@ def validate_and_format_indian_plate(text: str) -> tuple[str, bool]:
             pattern = rf"^[A-Z]{{2}}\d{{{district_len}}}[A-Z]{{{series_len}}}\d{{4}}$"
             if re.fullmatch(pattern, candidate):
                 return candidate, True
+
 
     return cleaned, False
 

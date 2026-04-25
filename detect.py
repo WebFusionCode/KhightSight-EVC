@@ -53,12 +53,23 @@ def detect_plates(model, image, imgsz: int = 640, conf: float = 0.25, device: st
     return detections
 
 def extract_crops(image, detections: list[PlateDetection], padding: int = 8) -> list[tuple]:
-    """Returns a list of (cropped_image, padded_bbox) for each detection."""
+    """Returns a list of (cropped_image, inner_bbox) for each detection, using erosion to drop branding labels."""
     crops = []
     height, width = image.shape[:2]
     for det in detections:
-        padded_bbox = pad_bbox(det.bbox, padding, width, height)
-        x1, y1, x2, y2 = padded_bbox
-        crop = image[y1:y2, x1:x2].copy()
-        crops.append((crop, padded_bbox))
+        x1, y1, x2, y2 = det.bbox
+        bw = x2 - x1
+        bh = y2 - y1
+        
+        # Algorithmic Erosion: Shave off top 12%, bottom 12%, and sides 4% to completely drop plastic frame branding
+        nx1 = int(x1 + (bw * 0.04))
+        ny1 = int(y1 + (bh * 0.12))
+        nx2 = int(x2 - (bw * 0.04))
+        ny2 = int(y2 - (bh * 0.12))
+        
+        inner_bbox = clip_bbox(nx1, ny1, nx2, ny2, width, height)
+        px1, py1, px2, py2 = inner_bbox
+        
+        crop = image[py1:py2, px1:px2].copy()
+        crops.append((crop, inner_bbox))
     return crops
