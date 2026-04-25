@@ -125,10 +125,15 @@ def resolve_weights(explicit_path: Path | None) -> Path:
             raise FileNotFoundError(f"Weights not found: {explicit_path}")
         return explicit_path.resolve()
 
+    # Check for root standalone deployment model
+    default_model = Path("knightsight.pt")
+    if default_model.exists():
+        return default_model.resolve()
+
     candidates = sorted(Path("runs/license_plate").rglob("best.pt"), key=lambda path: path.stat().st_mtime, reverse=True)
     if not candidates:
         raise FileNotFoundError(
-            "No best.pt file found under runs/license_plate. Train the model first or pass --weights."
+            "No best.pt file found under runs/license_plate and no knightsight.pt found at root. Train the model first."
         )
     return candidates[0].resolve()
 

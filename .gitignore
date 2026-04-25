@@ -37,4 +37,4 @@ train.cache
 val.cache
 
 # Exempt the absolute best model so it gets uploaded
-!runs/license_plate/quick_check_plus5_tight/weights/best.pt
+!knightsight.pt
