@@ -1,5 +1,16 @@
+import sys
+import os
+import subprocess
+
+try:
+    import cv2
+except ImportError:
+    # Auto-heal Streamlit Cloud Debian 12 Bug
+    subprocess.check_call([sys.executable, "-m", "pip", "uninstall", "-y", "opencv-python", "opencv-contrib-python"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python-headless", "opencv-contrib-python-headless"])
+    import cv2
+
 import streamlit as st
-import cv2
 import numpy as np
 import tempfile
 import json
