@@ -1,0 +1,40 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+venv/
+env/
+.venv/
+.env
+
+# MacOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Data & Models (DO NOT COMMIT HUGE FILES)
+dataset/
+runs/
+*.pt
+*.onnx
+*.weights
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# Deep Learning Temporary Caches
+.matplotlib/
+.ultralytics/
+train.cache
+val.cache
+
+# Exempt the absolute best model so it gets uploaded
+!runs/license_plate/quick_check_plus5_tight/weights/best.pt
