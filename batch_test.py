@@ -45,6 +45,11 @@ def run_batch_test():
             results[img_path.name] = {"extracted_plate": "UNKNOWN", "ocr_confidence": 0}
             print(f"[{i+1}/{len(image_paths)}] {img_path.name} -> NO PLATE DETECTED")
 
+        # Save the physical image so we can analyze the AI's internal visual layer!
+        annotated_dir = Path("eval_data/annotated")
+        annotated_dir.mkdir(exist_ok=True, parents=True)
+        cv2.imwrite(str(annotated_dir / img_path.name), annotated_img)
+
     end_time = time.time()
     
     # Save the output for the judges

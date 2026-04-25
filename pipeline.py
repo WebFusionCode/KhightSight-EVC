@@ -55,8 +55,8 @@ def process_frame(
                     break
 
         if not cache_hit:
-            preprocessed = preprocess_plate(crop)
-            ocr_res = run_ocr(ocr_engine, preprocessed)
+            # Bypass grayscale preprocessing to preserve the critical RGB contrast for PaddleOCR
+            ocr_res = run_ocr(ocr_engine, raw_crop_rgb)
 
         plate_text = ocr_res.plate_text
         confidence = ocr_res.confidence

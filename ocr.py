@@ -76,13 +76,9 @@ def _extract_text_and_scores_from_predict_result(result) -> tuple[list[str], lis
         texts = []
     if scores is None:
         scores = []
+    return texts, scores
 
-    return [str(text) for text in texts], [float(score) for score in scores]
-
-def run_ocr(ocr_engine, preprocessed_plate) -> OCRResult:
-    cv2 = require_cv2()
-    paddle_input = cv2.cvtColor(preprocessed_plate, cv2.COLOR_GRAY2BGR)
-
+def _run_paddle_inference(ocr_engine, paddle_input) -> tuple[list[str], list[float]]:
     tokens: list[str] = []
     confidences: list[float] = []
 
@@ -93,8 +89,6 @@ def run_ocr(ocr_engine, preprocessed_plate) -> OCRResult:
             tokens, confidences = _extract_text_and_scores_from_predict_result(first_result)
 
     if not tokens and hasattr(ocr_engine, "ocr"):
-        # Some versions of PaddleOCR (like v2.8+ on Python 3.13) fail if 'cls' is passed
-        # explicitly to ocr() because the internal predict() method doesn't accept it.
         try:
             raw_result = ocr_engine.ocr(paddle_input, cls=False)
         except TypeError:
@@ -107,13 +101,51 @@ def run_ocr(ocr_engine, preprocessed_plate) -> OCRResult:
             ordered_lines = sorted(first_item, key=_line_anchor_x)
             tokens = [line[1][0] for line in ordered_lines]
             confidences = [float(line[1][1]) for line in ordered_lines]
+            
+    return tokens, confidences
 
-    if not tokens:
+
+def run_ocr(ocr_engine, raw_rgb_plate) -> OCRResult:
+    cv2 = require_cv2()
+    
+    h, w = raw_rgb_plate.shape[:2]
+    aspect_ratio = w / float(h)
+    
+    all_tokens = []
+    all_confs = []
+    
+    def process_patch(patch):
+        ph, pw = patch.shape[:2]
+        if ph == 0 or pw == 0:
+            return
+        # Standardize strictly to 48px height for exact font-stroke matching in Paddle!
+        target_h = 48
+        scale = target_h / ph
+        target_w = max(1, int(pw * scale))
+        interp = cv2.INTER_CUBIC if scale > 1.0 else cv2.INTER_AREA
+        norm = cv2.resize(patch, (target_w, target_h), interpolation=interp)
+        paddle_in = cv2.cvtColor(norm, cv2.COLOR_RGB2BGR)
+        t, c = _run_paddle_inference(ocr_engine, paddle_in)
+        all_tokens.extend(t)
+        all_confs.extend(c)
+
+    # If the image is squarish (bike plate), cut it horizontally into two single lines.
+    if aspect_ratio < 2.5:
+        midpoint = h // 2
+        top_half = raw_rgb_plate[:midpoint, :]
+        bottom_half = raw_rgb_plate[midpoint:, :]
+        process_patch(top_half)
+        process_patch(bottom_half)
+    else:
+        # Standard car plate (single long line)
+        process_patch(raw_rgb_plate)
+
+    if not all_tokens:
         return OCRResult(plate_text="", confidence=0.0, raw_text="")
 
-    raw_text = "".join(tokens)
+    raw_text = "".join(all_tokens)
     return OCRResult(
         plate_text=raw_text,
-        confidence=float(fmean(confidences)) if confidences else 0.0,
+        confidence=float(fmean(all_confs)) if all_confs else 0.0,
         raw_text=raw_text,
     )
