@@ -16,20 +16,20 @@ os.environ.setdefault("YOLO_CONFIG_DIR", str(YOLO_CONFIG_DIR))
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 
-@dataclass(slots=True)
+@dataclass
 class PlateDetection:
     bbox: list[int]
     detection_confidence: float
 
 
-@dataclass(slots=True)
+@dataclass
 class OCRResult:
     plate_text: str
     confidence: float
     raw_text: str
 
 
-@dataclass(slots=True)
+@dataclass
 class PlatePrediction:
     plate_text: str
     confidence: float
